@@ -25,7 +25,7 @@ public class DbBackup {
     private static final String ITEMS_KEY = "items";
     private static final String STORAGE_SECTIONS_KEY = "storageSections";
 
-    private static class ItemBackup {
+    public static class ItemBackup {
 
         private static final String NAME_KEY = "name";
         private static final String STORAGE_SECTION_KEY = "storageSection";
@@ -65,7 +65,7 @@ public class DbBackup {
         }
     }
 
-    private static JSONArray stringListToJsonArray(List<String> strings) {
+    public static JSONArray stringListToJsonArray(List<String> strings) {
         JSONArray stringsJSONArray = new JSONArray();
         for(String string : strings) {
             stringsJSONArray.put(string);
