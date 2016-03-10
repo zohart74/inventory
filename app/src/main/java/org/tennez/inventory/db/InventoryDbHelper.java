@@ -10,6 +10,7 @@ import android.util.Log;
 
 import org.tennez.inventory.Item;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -116,7 +117,7 @@ public class InventoryDbHelper extends SQLiteOpenHelper {
 
     public boolean updateItem(String currentItemName, Item updatedItem) {
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("UPDATE " + InventoryDbSchema.ITEMS_TABLE_NAME+" SET "+InventoryDbSchema.ITEM_NAME_COL+" = ?, "+InventoryDbSchema.STORAGE_SECTION_COL+" =?, "+InventoryDbSchema.STORE_SECTION_COL+" = ? WHERE "+InventoryDbSchema.ITEM_NAME_COL+" = ?", new Object[] {updatedItem.getName(), updatedItem.getStorageSection(), updatedItem.getStoreSection(), currentItemName});
+        db.execSQL("UPDATE " + InventoryDbSchema.ITEMS_TABLE_NAME + " SET " + InventoryDbSchema.ITEM_NAME_COL + " = ?, " + InventoryDbSchema.STORAGE_SECTION_COL + " =?, " + InventoryDbSchema.STORE_SECTION_COL + " = ? WHERE " + InventoryDbSchema.ITEM_NAME_COL + " = ?", new Object[]{updatedItem.getName(), updatedItem.getStorageSection(), updatedItem.getStoreSection(), currentItemName});
         return true;
     }
 
@@ -162,7 +163,7 @@ public class InventoryDbHelper extends SQLiteOpenHelper {
             shoppingCartItems.add(cursor.getString(cursor.getColumnIndex(InventoryDbSchema.CART_ITEM_NAME_COL)));
             cursor.moveToNext();
         }
-        Log.e("IVTD","Retrieving cart items: "+shoppingCartItems);
+        Log.e("IVTD", "Retrieving cart items: " + shoppingCartItems);
         return shoppingCartItems;
     }
 

@@ -7,6 +7,8 @@
     <string name="shoppingList">רשימת קניות</string>
     <string name="addProducts">הוספת מוצרים</string>
     <string name="editProducts">עריכת מוצרים</string>
+    <string name="backup">גבה</string>
+    <string name="restore">שחזר</string>
 
 
     <string name="title_activity_inventory_check">בדיקת מלאי</string>
