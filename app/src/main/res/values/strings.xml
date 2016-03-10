@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ניהול מלאי</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="inventoryCheck">בדיקת מלאי</string>
+    <string name="shoppingList">רשימת קניות</string>
+    <string name="addProducts">הוספת מוצרים</string>
+    <string name="editProducts">עריכת מוצרים</string>
+
+
+    <string name="title_activity_inventory_check">בדיקת מלאי</string>
+    <string name="title_activity_shopping_list">רשימת קניות</string>
+    <string name="title_activity_shopping_list_section">רשימת קניות אזורית</string>
+    <string name="title_activity_add_products">הוספת מוצרים</string>
+    <string name="title_activity_items_configuration">עריכת מוצרים</string>
+
+
+    <string name="check">בדוק</string>
+    <string name="skip">דלג</string>
+    <string name="exists">יש</string>
+    <string name="required">צריך לקנות</string>
+
+    <string name="total">סך הכל</string>
+    <string name="endShopping">סיים</string>
+    <string name="clearShopping">נקה</string>
+
+    <string name="storageSection">איזור אחסון</string>
+    <string name="storeSection">מיקום בחנות</string>
+    <string name="name">שם</string>
+
+    <string name="add">הוסף</string>
+    <string name="edit">עדכן</string>
+    <string name="clear">נקה</string>
+    <string name="delete">מחק</string>
+
+    <string name="createNewStorageSection">צור איזור חדש</string>
+    <string name="createNewStoreSection">צור מיקום חדש</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>
