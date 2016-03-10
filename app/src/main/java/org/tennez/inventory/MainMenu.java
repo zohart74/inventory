@@ -22,8 +22,9 @@ public class MainMenu extends Activity {
     private static final int SHOPPING_LIST_INDEX = 1;
     private static final int ADD_PRODUCTS_INDEX = 2;
     private static final int EDIT_PRODUCTS_INDEX = 3;
-    private static final int BACKUP_INDEX = 4;
-    private static final int RESTORE_INDEX = 5;
+    private static final int EDIT_STORAGE_SECTIONS_INDEX = 4;
+    private static final int BACKUP_INDEX = 5;
+    private static final int RESTORE_INDEX = 6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class MainMenu extends Activity {
                 getResources().getString(R.string.shoppingList),
                 getResources().getString(R.string.addProducts),
                 getResources().getString(R.string.editProducts),
+                getResources().getString(R.string.editStorageSections),
                 getResources().getString(R.string.backup),
                 getResources().getString(R.string.restore)
         };
@@ -85,6 +87,10 @@ public class MainMenu extends Activity {
                 } else if (position == EDIT_PRODUCTS_INDEX) {
                     Intent intent = new Intent();
                     intent.setClass(getApplicationContext(), ItemsConfigurationActivity.class);
+                    startActivity(intent);
+                } else if (position == EDIT_STORAGE_SECTIONS_INDEX) {
+                    Intent intent = new Intent();
+                    intent.setClass(getApplicationContext(), StorageSectionsEditActivity.class);
                     startActivity(intent);
                 } else if (position == BACKUP_INDEX) {
                     File backupFile = new File(getApplicationContext().getExternalCacheDir(),"db-backup.json");

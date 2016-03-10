@@ -7,6 +7,7 @@
     <string name="shoppingList">רשימת קניות</string>
     <string name="addProducts">הוספת מוצרים</string>
     <string name="editProducts">עריכת מוצרים</string>
+    <string name="editStorageSections">עריכת מיקומי אחסון</string>
     <string name="backup">גבה</string>
     <string name="restore">שחזר</string>
 
@@ -16,6 +17,7 @@
     <string name="title_activity_shopping_list_section">רשימת קניות אזורית</string>
     <string name="title_activity_add_products">הוספת מוצרים</string>
     <string name="title_activity_items_configuration">עריכת מוצרים</string>
+    <string name="title_activity_edit_storage_sections">עריכת מיקומי אחסון</string>
 
 
     <string name="check">בדוק</string>
@@ -35,6 +37,8 @@
     <string name="edit">עדכן</string>
     <string name="clear">נקה</string>
     <string name="delete">מחק</string>
+    <string name="save">שמור</string>
+    <string name="cancel">בטל</string>
 
     <string name="createNewStorageSection">צור איזור חדש</string>
     <string name="createNewStoreSection">צור מיקום חדש</string>
